@@ -1,0 +1,56 @@
+{
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "failed": false,
+    "imdata": [
+        {
+            "faultSummary": {
+                "attributes": {
+                    "cause": "port-down",
+                    "childAction": "",
+                    "code": "F0104",
+                    "count": "3",
+                    "descr": "This fault occurs when a bond interface on a controller is in the link-down state.",
+                    "dn": "fltcode-F0104",
+                    "domain": "infra",
+                    "nonAcked": "3",
+                    "nonDelegated": "3",
+                    "nonDelegatedAndNonAcked": "3",
+                    "rule": "cnw-aggr-if-down",
+                    "severity": "critical",
+                    "status": "",
+                    "subject": "equipment",
+                    "type": "operational"
+                }
+            }
+        },
+        {
+            "faultSummary": {
+                "attributes": {
+                    "cause": "equipment-psu-missing",
+                    "childAction": "",
+                    "code": "F1318",
+                    "count": "1",
+                    "descr": "This fault occurs when PSU are not detected correctly",
+                    "dn": "fltcode-F1318",
+                    "domain": "infra",
+                    "nonAcked": "1",
+                    "nonDelegated": "1",
+                    "nonDelegatedAndNonAcked": "1",
+                    "rule": "eqpt-psg-pzero-pwr",
+                    "severity": "major",
+                    "status": "",
+                    "subject": "power-group",
+                    "type": "environmental"
+                }
+            }
+        }
+    ],
+    "status": -1,
+    "totalCount": 2,
+    "warnings": [
+        "Platform darwin on host apic is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible/2.11/reference_appendices/interpreter_discovery.html for more information."
+    ]
+}
